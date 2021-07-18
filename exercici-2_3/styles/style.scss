@@ -1,0 +1,36 @@
+/*Variables*/
+@import "components/vars";
+
+/*Fonts*/
+@import 
+	url("https://fonts.googleapis.com/css?family=Lato:300& d isplay=swap"); 
+
+/* general style*/
+@import "components/general_styles";
+
+/*mixins*/
+
+@import "components/mixins";
+
+
+/*Animations keyframes*/
+
+@for $i from 1 through 5 {
+	/*Keyframe-#{$i}*/
+	@keyframes strip--#{$i} {
+		from {
+			transform: translate3d(#{map-get($animation-translate, #{$i})});
+		}
+	}
+	/*Get map values $colour and $animation from #{$i}*/
+	.strip{
+		&:nth-child(#{$i}) {
+			.strip_content {
+				background-color: #{map-get($colours-blocks, #{$i})};
+				animation-name: strip--#{$i};
+				animation-duration: #{map-get($animation-duration, #{$i})};
+				animation-timing-function: ease-out;
+			}
+		}
+	}
+}

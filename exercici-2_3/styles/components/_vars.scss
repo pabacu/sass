@@ -1,0 +1,43 @@
+/*Main blocks colors*/
+/*
+        "1": #244F75,
+        "2": #60BFBF,
+        "3": #8C4B7E,
+        "4": #F8BB44,
+        "5": #F24B4B
+*/
+$colours-blocks: (
+    (
+        "1": #244F75,
+        "2": #60BFBF,
+        "3": #8C4B7E,
+        "4": #F8BB44,
+        "5": #F24B4B
+    )
+);
+
+/*Animation variables*/
+/*From: 0.5s to 1s*/
+$animation-duration: (
+    (
+        "1": 0.5s,
+        "2": 0.8s,
+        "3": 0.7s,
+        "4": 1s,
+        "5": 0.5s
+    )
+);
+
+$animation-translate: (
+    (
+        "1": "-100%, 0, 0",
+        "2": "0, 100%, 0",
+        "3": "0, -100%, 0",
+        "4": "0, 100%, 0",
+        "5": "100%, 0, 0"
+    )
+);
+
+/*Main Font*/
+/*font : Lato*/
+$font : Lato;
